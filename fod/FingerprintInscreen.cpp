@@ -18,6 +18,7 @@
 
 #include "FingerprintInscreen.h"
 #include <android-base/logging.h>
+#include <android-base/properties.h>
 #include <hidl/HidlTransportSupport.h>
 #include <fstream>
 
@@ -54,6 +55,9 @@ namespace implementation {
 
 int wide,p3,srgb,night;
 bool dcDimState;
+int device[3] = {0, 0, 0};
+
+using android::base::GetProperty;
 
 /*
  * Write value to path and close file.
@@ -76,6 +80,11 @@ static T get(const std::string& path, const T& def) {
 FingerprintInscreen::FingerprintInscreen() {
     this->mVendorFpService = IVendorFingerprintExtensions::getService();
     this->mVendorDisplayService = IOneplusDisplay::getService();
+    std::string device = android::base::GetProperty("ro.product.device", "");
+    device[0] = device == "OnePlus7" ? 1 : 0;
+    device[1] = device == "OnePlus7pro" ? 1 : 0;
+    device[2] = device == "OnePlus7T" ? 1 : 0;
+    device[3] = device == "OnePlus7TPro" ? 1 : 0;
 }
 
 Return<void> FingerprintInscreen::onStartEnroll() {
@@ -187,7 +196,10 @@ Return<int32_t> FingerprintInscreen::getDimAmount(int32_t) {
 }
 
 Return<bool> FingerprintInscreen::shouldBoostBrightness() {
-    return false;
+    if (device[0])
+        return true;
+    else
+        return false;
 }
 
 Return<void> FingerprintInscreen::setCallback(const sp<IFingerprintInscreenCallback>& callback) {
