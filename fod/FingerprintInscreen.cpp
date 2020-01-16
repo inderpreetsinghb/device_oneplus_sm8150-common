@@ -111,7 +111,7 @@ Return<void> FingerprintInscreen::onPress() {
 Return<void> FingerprintInscreen::onRelease() {
     set(HBM_ENABLE_PATH, 0);
     this->mVendorDisplayService->setMode(OP_DISPLAY_NOTIFY_PRESS, 0);
-    set(HBM_DIM_PATH, 255 - getDimAmount(255));
+    set(HBM_DIM_PATH, 0);
 
     return Void();
 }
