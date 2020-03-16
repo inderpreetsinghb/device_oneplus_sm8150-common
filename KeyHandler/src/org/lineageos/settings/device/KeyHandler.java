@@ -28,11 +28,11 @@ import android.os.VibrationEffect;
 import android.util.Log;
 import android.view.KeyEvent;
 
-import com.android.internal.os.DeviceKeyHandler;
+import com.android.internal.os.AltDeviceKeyHandler;
 
 import vendor.oneplus.camera.CameraHIDL.V1_0.IOnePlusCameraProvider;
 
-public class KeyHandler implements DeviceKeyHandler {
+public class KeyHandler implements AltDeviceKeyHandler {
     private static final String TAG = KeyHandler.class.getSimpleName();
     private static final boolean DEBUG = false;
 
