@@ -1,9 +1,9 @@
 [
   {
     "remote"      : "github",
-    "repository"  : "AOSiP-Devices/kernel_oneplus_sdm845",
+    "repository"  : "LineageOS/android_kernel_oneplus_sdm845",
     "target_path" : "kernel/oneplus/sdm845",
-    "branch"      : "ten"
+    "branch"      : "lineage-17.1"
   },
   {
     "remote"      : "github"
