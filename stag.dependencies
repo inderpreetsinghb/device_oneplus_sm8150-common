@@ -12,7 +12,8 @@
     "branch"      : "lineage-17.1"
   },
   {
-    "repository"  : "vendor_oneplus",
+    "remote"      : "github",
+    "repository"  : "StagOS-Devices/vendor_oneplus",
     "target_path" : "vendor/oneplus",
     "branch"      : "sx"
   },
