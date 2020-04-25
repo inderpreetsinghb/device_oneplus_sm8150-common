@@ -16,23 +16,5 @@
     "repository"  : "StagOS-Devices/vendor_oneplus",
     "target_path" : "vendor/oneplus",
     "branch"      : "sx"
-  },
-  {
-    "remote"      : "github",
-    "repository"  : "LineageOS/android_hardware_qcom_audio",
-    "target_path" : "hardware/qcom-caf/sm8150/audio",
-    "branch"      : "lineage-17.1-caf-sm8150"
-  },
-  {
-    "remote"      : "github",
-    "repository"  : "LineageOS/android_hardware_qcom_display",
-    "target_path" : "hardware/qcom-caf/sm8150/display",
-    "branch"      : "lineage-17.1-caf-sm8150"
-  },
-  {
-    "remote"      : "github",
-    "repository"  : "LineageOS/android_hardware_qcom_media",
-    "target_path" : "hardware/qcom-caf/sm8150/media",
-    "branch"      : "lineage-17.1-caf-sm8150"
   }
 ]
