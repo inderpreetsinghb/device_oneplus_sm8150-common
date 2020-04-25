@@ -12,14 +12,7 @@
     "branch"      : "lineage-17.1"
   },
   {
-    "remote"      : "github",
-    "repository"  : "LineageOS/android_packages_resources_devicesettings",
-    "target_path" : "packages/resources/devicesettings",
-    "branch"      : "lineage-17.1"
-  },
-  {
-    "remote"      : "github",
-    "repository"  : "StagOS-Device/vendor_oneplus",
+    "repository"  : "vendor_oneplus",
     "target_path" : "vendor/oneplus",
     "branch"      : "sx"
   },
