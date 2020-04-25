@@ -1,18 +1,18 @@
 [
   {
     "remote"      : "github",
-    "repository"  : "LineageOS/android_kernel_oneplus_sdm845",
-    "target_path" : "kernel/oneplus/sdm845",
+    "repository"  : "LineageOS/android_kernel_oneplus_sm8150",
+    "target_path" : "kernel/oneplus/sm8150",
     "branch"      : "lineage-17.1"
   },
   {
-    "remote"      : "github"
+    "remote"      : "github",
     "repository"  : "LineageOS/android_device_oneplus_common",
-    "target_path" : "device/oneplus/common"
+    "target_path" : "device/oneplus/common",
     "branch"      : "lineage-17.1"
   },
   {
-    "remote"      : "github"
+    "remote"      : "github",
     "repository"  : "LineageOS/android_packages_resources_devicesettings",
     "target_path" : "packages/resources/devicesettings",
     "branch"      : "lineage-17.1"
